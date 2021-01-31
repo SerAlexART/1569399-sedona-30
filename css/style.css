@@ -8,6 +8,10 @@
   --basic-light-gray: #F2F2F2;
   --basic-dark-gray: #A9A9A9;
 
+  --basic-extra-gray: #E5E5E5;
+  --basic-extra-dark-gray: #666666;
+
+
   --basic-brown: #766357;
   --basic-light-brown: #604E43;
   --basic-dark-brown: #503E33;
@@ -66,6 +70,12 @@ img {
 
 .site-navigation a:active {
   color: var(--basic-light-black);
+}
+
+.site-navigation .navigation-active-link,
+.site-navigation .navigation-active-link:hover,
+.site-navigation .navigation-active-link:active {
+  color: var(--basic-brown);
 }
 
 /* Main */
@@ -142,7 +152,9 @@ img {
 .button {
   font: inherit;
   font-weight: 700;
+  text-transform: uppercase;
   color: var(--basic-white);
+  text-align: center;
   border: none;
   text-decoration: none;
   cursor: pointer;
@@ -167,6 +179,165 @@ img {
 /* Map */
 .map {
   background-color: var(--background-map);
+}
+
+/* Filters */
+.filters {
+  background-color: var(--basic-light-blue);
+  background-image: url(../img/photo/background_catalog.jpg);
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+  /* Временно добавил размер фона, чтобы глазам больно не было + если будет время, то фон сделает с тем же фоно, что и на главной, просто добавив фильтр размытия */
+}
+
+.filters {
+  color: var(--basic-white);
+  text-align: left;
+}
+
+.filter legend {
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.filter ul {
+  list-style: none;
+}
+
+.filter-output {
+  text-align: center;
+  border: 2px solid var(--basic-white);
+}
+
+.filter-button {
+  color: var(--basic-white);
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  border: 2px solid var(--basic-white);
+  background-color: transparent;
+}
+
+.filter-button:hover,
+.filter-button:focus,
+.filter-button:active {
+  color: var(--basic-black);
+  background-color: var(--basic-white);
+}
+
+/* Catalog */
+.catalog-sort {
+  font-size: 12px;
+  line-height: 18px;
+  text-align: left;
+  border-bottom: 1px solid var(--basic-extra-gray);
+}
+
+.catalog-sort-result {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.catalog-sort a {
+  color: var(--basic-light-black);
+  border-bottom: 1px dashed var(--basic-blue);
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.catalog-sort a:hover,
+.catalog-sort a:focus {
+  color: var(--basic-blue);
+}
+
+.catalog-sort a:active {
+  color: var(--basic-black);
+  border-bottom: none;
+}
+
+.catalog-sort .catalog-sort-active,
+.catalog-sort .catalog-sort-active:hover,
+.catalog-sort catalog-sort-active:active {
+  color: var(--basic-blue);
+  border-bottom: none;
+}
+
+.catalog-list {
+  list-style: none;
+}
+
+.catalog-item {
+  text-align: left;
+  border-bottom: 1px solid var(--basic-extra-gray);
+}
+
+.catalog-item-title {
+  color: var(--basic-black);
+  text-decoration: none;
+}
+
+.catalog-item-title h3 {
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+
+.catalog-item-title:hover,
+.catalog-item-title:focus {
+  color: var(--basic-blue);
+}
+
+.catalog-item-title:active {
+  color: var(--basic-light-black);
+}
+
+.catalog-item-rating {
+  color: var(--basic-extra-dark-gray);
+  background-color: var(--basic-light-gray);
+}
+
+.catalog-item-link {
+  background-color: var(--basic-blue);
+}
+
+.catalog-item-link:hover,
+.catalog-item-link:focus {
+  background-color: var(--basic-light-blue);
+}
+
+.catalog-item-link:active {
+  background-color: var(--basic-dark-blue);
+  color: var(--basic-light-white);
+}
+
+.catalog-item-link {
+  background-color: var(--basic-blue);
+}
+
+.catalog-item-link:hover,
+.catalog-item-link:focus {
+  background-color: var(--basic-light-blue);
+}
+
+.catalog-item-link:active {
+  background-color: var(--basic-dark-blue);
+  color: var(--basic-light-white);
+}
+
+.catalog-item-button {
+  background-color: var(--basic-brown);
+}
+
+.catalog-item-button:hover,
+.catalog-item-button:focus {
+  background-color: var(--basic-light-brown);
+}
+
+.catalog-item-button:active {
+  background-color: var(--basic-dark-brown);
+  color: var(--basic-light-white);
 }
 
 /* Footer */
