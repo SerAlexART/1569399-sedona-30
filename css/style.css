@@ -98,6 +98,7 @@ img {
 
 /* Welcome */
 .welcome-header {
+  padding: 80px;
   margin-bottom: 42px;
   background-color: var(--basic-light-blue);
   background-image: url(../img/photo/background.jpg);
