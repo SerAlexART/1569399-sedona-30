@@ -104,11 +104,12 @@ img {
   background-image: url(../img/photo/background.jpg);
   background-repeat: no-repeat;
   background-position: top center;
+  background-size: cover;
 }
 
 .welcone-content {
   line-height: 26px;
-    margin-bottom: 51px;
+  margin-bottom: 51px;
 }
 
 .welcome-content-title {
@@ -162,19 +163,29 @@ img {
   grid-template-columns: 1fr 1fr 1fr;
 }
 
+.sub-feature-item {
+  padding: 60px 50px 82px;
+}
+
+.feature-item-other {
+  padding: 47px 50px 50px;
+}
+
 .feature-title {
-  margin: 50px 50px 25px;
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 21px;
   font-weight: 700;
 }
 
 .feature-number {
-  margin: 0 50px 25px;
+  margin: 0;
+  margin-bottom: 25px;
   color: var(--basic-extra-black);
 }
 
 .feature-text {
-  margin: 0 60px 54px;
+  margin: 0;
   color: var(--basic-extra-black);
 }
 
@@ -188,6 +199,7 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  padding: 50px;
 }
 
 .feature-item-accent .feature-number,
@@ -201,14 +213,16 @@ img {
 
 /* Booking */
 .booking-title {
-  margin-top: 58px;
+  margin: 0;
+  margin-bottom: 25px;
   font-size: 30px;
   line-height: 24px;
   font-weight: 700;
 }
 
 .booking-text {
-/*  width: 435px;*/
+  margin: 0;
+  margin-bottom: 50px;
   line-height: 24px;
   color: var(--basic-extra-black);
 }
@@ -227,6 +241,7 @@ img {
 }
 
 .booking-button {
+  margin: 0;
   font-size: 21px;
   line-height: 26px;
   background-color: var(--basic-brown);
@@ -249,6 +264,9 @@ img {
 
 /* Filters */
 .filters {
+  padding: 26px 72px 32px;
+  color: var(--basic-white);
+  text-align: left;
   background-color: var(--basic-light-blue);
   background-image: url(../img/photo/background_catalog.jpg);
   background-repeat: no-repeat;
@@ -257,9 +275,18 @@ img {
   /* Временно добавил размер фона, чтобы глазам больно не было + если будет время, то фон сделает с тем же фоно, что и на главной, просто добавив фильтр размытия */
 }
 
-.filters {
-  color: var(--basic-white);
-  text-align: left;
+.filter {
+  display: grid;
+  grid-template-columns: auto auto 1fr;
+}
+
+.filter-checkbox-column {
+ margin-right: 120px;
+  justify-self: start;
+}
+
+.filter-price-wrapper {
+  justify-self: end;
 }
 
 .filter legend {
@@ -296,13 +323,19 @@ img {
 
 /* Catalog */
 .catalog-sort {
+  padding: 30px 72px;
   font-size: 12px;
   line-height: 18px;
   text-align: left;
   border-bottom: 1px solid var(--basic-extra-gray);
+
+  display: grid;
+  grid-template-columns: 135px 1fr;
 }
 
 .catalog-sort-result {
+  margin: 0;
+  padding: 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -339,16 +372,56 @@ img {
 }
 
 .catalog-item {
+  margin: 0;
+  padding: 30px 72px;
   text-align: left;
   border-bottom: 1px solid var(--basic-extra-gray);
+
+  display: grid;
+  grid-template-columns: 135px auto auto 1fr;
+  grid-template-rows: 1fr 1fr 27px;;
 }
 
 .catalog-item-title {
+  margin: 0;
+  padding: 0;
   color: var(--basic-black);
   text-decoration: none;
+
+  grid-column: 2/-1;
+  grid-row: 1/2;
+}
+
+.catalog-item p {
+  margin: 0;
+  margin-left: 37px;
+  padding: 0;
+}
+
+.catalog-item-thumbnail {
+  grid-column: 1/2;
+  grid-row: 1/4;
+}
+
+.catalog-item-type {
+  grid-column: 2/3;
+  grid-row: 2/3;
+}
+
+.catalog-item-price {
+    grid-column: 3/4;
+  grid-row: 2/3;
+}
+
+.catalog-item-links {
+  grid-column: 2/4;
+  grid-row: 3/4;
 }
 
 .catalog-item-title h3 {
+  margin: 0;
+  margin-left: 37px;
+  padding: 0;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
@@ -363,9 +436,15 @@ img {
   color: var(--basic-light-black);
 }
 
-.catalog-item-rating {
+.catalog-item .catalog-item-rating {
+  margin: 0;
+  padding: 3px 12px 3px 15px;
   color: var(--basic-extra-dark-gray);
   background-color: var(--basic-light-gray);
+
+  grid-column: -2;
+  grid-row: 3;
+  justify-self: end;
 }
 
 .catalog-item-link {
@@ -426,6 +505,20 @@ img {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
+}
+
+.footer-contacts h2 {
+  margin: 0;
+  margin-bottom: 9px;
+}
+
+.footer-contacts p {
+  margin: 0;
+  margin-bottom: 10px;
+}
+
+.footer-contacts p:last-of-type {
+  margin-bottom: 0;
 }
 
 .contacts-phone {
