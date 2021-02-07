@@ -47,6 +47,7 @@
             <li class="filter-checkbox">
               <input type="checkbox" name="parking" id="parking">
               <label for="parking">Парковка</label>
+            </li>
 
             <li class="filter-checkbox">
               <input type="checkbox" name="wi-fi" id="wi-fi">
@@ -75,12 +76,14 @@
           </ul>
         </fieldset>
 
-        <div class="filter-price-wrapper">
+        <div class="filter-price">
           <fieldset>
+           <div class="filter-price-wrapper">
             <legend>Стоимость в сутки (Р):</legend>
             <div class="filter-output">
               <p>
-                от <output name="min_price_result">0</output>
+               от <output name="min_price_result">0</output></p>
+               <p>
                 до <output name="max_price_result">3500</output>
               </p>
             </div>
@@ -88,6 +91,7 @@
             <div class="filter-slider">
               <input class="filter-slider-range" type="range" name="min_price" id="min_price" min="0" max="2000" value="0">
               <input class="filter-slider-range" type="range" name="max_price" id="max_price" min="2000" max="5000" value="3500">
+            </div>
             </div>
 
           </fieldset>
@@ -127,6 +131,7 @@
             <button class="catalog-item-button button" type="button">Забронировать</button>
           </p>
         </li>
+
         <li class="catalog-item">
           <a class="catalog-item-title" href="blank.html">
             <h3>Мотель Desert Quail Inn</h3>
@@ -140,6 +145,7 @@
             <button class="catalog-item-button button" type="button">Забронировать</button>
           </p>
         </li>
+
         <li class="catalog-item">
           <a class="catalog-item-title" href="blank.html">
             <h3>Villas at Poco Diablo</h3>
