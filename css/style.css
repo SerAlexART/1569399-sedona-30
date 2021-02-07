@@ -420,7 +420,7 @@ img {
   font-weight: 400;
   border: 2px solid var(--basic-white);
   background-color: transparent;
-  flex-basis: 36p;
+  flex-basis: 36px;
 }
 
 .filter-button:hover,
@@ -439,7 +439,7 @@ img {
 
   display: flex;
 
-/*
+  /*
   display: grid;
   grid-template-columns: 172px 1fr;
 */
@@ -675,8 +675,8 @@ img {
   margin-bottom: 6px;
 }
 
-.social-list li:nth-child(3n) {
-  margin-right: 50;
+.social-list li:nth-child(5){
+  margin-right: 0;
 }
 
 .social-button {
