@@ -147,7 +147,7 @@ img {
   margin-bottom: 42px;
   background-color: var(--basic-light-blue);
   /*  background-image: url("../img/photo/background.jpg");*/
-  background: url("../img/icon/mask_backround_photo.svg"), url("../img/photo/background.jpg");
+  background-image: url("../img/icon/mask_backround_photo.svg"), url("../img/photo/background.jpg");
   background-repeat: no-repeat;
   background-position: bottom -1px center, top center;
   background-size: 100% auto, cover;
@@ -490,9 +490,7 @@ img {
   margin-right: 12px;
   cursor: pointer;
   padding: 0;
-  border: none;
   background-color: transparent;
-  cursor: pointer;
 }
 
 .number-of-children {
@@ -500,9 +498,7 @@ img {
   margin-right: 12px;
   cursor: pointer;
   padding: 0;
-  border: none;
   background-color: transparent;
-  cursor: pointer;
 }
 
 .number-wrapper {
@@ -536,20 +532,7 @@ img {
 
 .number-button {
   position: absolute;
-  top: 13px;
-  width: 12px;
-  height: 12px;
-  padding: 0;
-  border: none;
-  background-color: transparent;
-  cursor: pointer;
-  display: flex;
-  border: 1px solid red;
-}
-
-.number-button {
-  position: absolute;
-  top: 0px;
+  top: 0;
   width: 35px;
   height: 38px;
   padding: 0;
@@ -839,6 +822,10 @@ img {
   cursor: pointer;
 }
 
+.filter-range-controls .toggle:hover {
+  transform: scale(1.1);
+}
+
 .filter-range-controls .toogle-min {
   left: 0;
 }
@@ -852,7 +839,7 @@ img {
   margin-right: auto;
   margin-left: 84px;
   margin-bottom: 0;
-  + justify-content: center;
+  justify-content: center;
   padding: 6px 35px 6px 35px;
   box-sizing: border-box;
   color: var(--basic-white);
@@ -862,7 +849,7 @@ img {
   border: 2px solid var(--basic-white);
   background-color: transparent;
   flex-basis: 36px;
-  /*    width: 137px;*/
+      width: 137px;
 }
 
 .filter-button:hover,
@@ -928,7 +915,7 @@ img {
 }
 
 .catalog-sort-list li:last-child {
-  margin-right: 0px;
+  margin-right: 0;
 }
 
 .catalog-sort-item a {
@@ -1188,7 +1175,6 @@ img {
 
 .inner-footer-wrapper {
   position: relative;
-  margin-bottom: 35px;
 }
 
 .footer-section {
