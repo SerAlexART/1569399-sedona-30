@@ -927,7 +927,7 @@ img {
 }
 
 .catalog-sort-item a {
-  /*  padding-bottom: 4px;*/
+    padding-bottom: 2px;
   color: var(--basic-light-black);
   border-bottom: 1px dashed var(--basic-blue);
   text-decoration: none;
@@ -1004,8 +1004,8 @@ img {
   border-top: 1px solid var(--basic-extra-gray);
 
   display: grid;
-  grid-template-columns: 164px 110px 142px auto max-content;
-  grid-template-rows: min-content 1fr 27px;
+  grid-template-columns: 164px 115px 150px auto 110px;
+  grid-template-rows: auto 33px 27px;
 }
 
 .catalog-list:last-child {
@@ -1040,6 +1040,7 @@ img {
 }
 
 .catalog-item-type {
+  margin-bottom: 18px;
   grid-column: 2/3;
   grid-row: 2/3;
 
@@ -1057,7 +1058,6 @@ img {
 
 .catalog-item-title h3 {
   margin: 0;
-  /*  margin-top: -5px;*/
   padding: 0;
   font-size: 21px;
   line-height: 26px;
@@ -1076,12 +1076,13 @@ img {
 .catalog-item .catalog-item-rating {
   margin: 0;
   padding: 3px 12px 3px 15px;
+  width: 110px;
+  box-sizing: border-box;
   color: var(--basic-extra-dark-gray);
   background-color: var(--basic-light-gray);
 
   grid-column: -2;
   grid-row: 3;
-  justify-self: end;
 }
 
 .catalog-item-stars-list {
