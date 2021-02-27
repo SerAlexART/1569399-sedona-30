@@ -840,7 +840,6 @@ img {
 .filter legend {
   margin-top: 0;
   margin-right: 0;
-  margin-bottom: 0;
   margin-left: 0;
   margin-bottom: 25px;
   padding-top: 0;
@@ -897,7 +896,6 @@ img {
   margin-top: 0;
   margin-right: 0;
   margin-bottom: 0;
-  margin-left: 0;
   margin-left: 40px;
   padding-top: 0;
   padding-right: 0;
@@ -987,11 +985,11 @@ img {
 }
 
 
-.filter-range-controls .toogle-min {
+.filter-range-controls .toggle-min {
   left: 0;
 }
 
-.filter-range-controls .toogle-max {
+.filter-range-controls .toggle-max {
   left: 250px;
 }
 
@@ -1065,7 +1063,7 @@ img {
 .catalog-sort-filter p {
   flex-basis: 75px;
   margin-top: 0;
-  margin-right: 40px0;
+  margin-right: 40px;
   margin-bottom: 0;
   margin-left: 0;
   padding-top: 0;
