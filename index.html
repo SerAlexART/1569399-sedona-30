@@ -122,7 +122,7 @@
             <form class="booking-form" method="get" action="https://echo.htmlacademy.ru/" target="_blank">
               <p class="booking-form-date">
                 <label for="arrival-date">Дата заезда:</label>
-                <input type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017">
+                <input class="arrival-date" type="text" name="arrival-date" id="arrival-date" placeholder="24 апреля 2017">
 
                 <button class="arrival-date-calendar" type="button" aria-label="Выбрать дату заезда">
                   <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -134,7 +134,7 @@
 
               <p class="booking-form-date">
                 <label for="date-of-departure">Дата выезда:</label>
-                <input type="text" name="date-of-departure" id="date-of-departure" placeholder="4 июля 2017">
+                <input class="date-of-departure"  type="text" name="date-of-departure" id="date-of-departure" placeholder="4 июля 2017">
 
                 <button class="arrival-date-calendar" type="button" aria-label="Выбрать дату выезда">
                   <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -155,7 +155,7 @@
                       </svg>
                     </button>
 
-                    <input type="text" name="number-of-adult" id="number-of-adult" placeholder="2">
+                    <input class="number-of-adult-input" type="text" name="number-of-adult" id="number-of-adult" placeholder="2">
 
                     <button class="number-of-adult-max number-button number-button-max" type="button" aria-label="Увеличить количество взрослых на одну единицу">
                       <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -175,7 +175,7 @@
                       </svg>
                     </button>
 
-                    <input type="text" name="number-of-children" id="number-of-children" placeholder="0">
+                    <input  class="number-of-children-input" type="text" name="number-of-children" id="number-of-children" placeholder="0">
 
                     <button class="number-of-children-max number-button number-button-max" type="button" aria-label="Уменьшить количество детей на одну единицу">
                       <svg width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -260,6 +260,7 @@
       </div>
     </footer>
   </div>
+  <script src="js/script.js"></script>
 </body>
 
 </html>
