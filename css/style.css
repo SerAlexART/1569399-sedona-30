@@ -71,6 +71,7 @@ img {
 
 .container {
   position: relative;
+  z-index: 50;
 
   display: grid;
   grid-template-rows: min-content 1fr min-content;
@@ -370,6 +371,8 @@ img {
   padding-left: 73px;
 
   text-align: center;
+
+  background-color: var(--basic-white);
 }
 
 .booking-title {
@@ -406,9 +409,6 @@ img {
 }
 
 .booking-button {
-  position: relative;
-  z-index: 10;
-
   display: block;
   box-sizing: border-box;
   width: 568px;
@@ -440,6 +440,7 @@ img {
 
 .booking-form-wrapper {
   position: absolute;
+  z-index: -10;
   left: 50%;
 
   box-sizing: border-box;
@@ -462,17 +463,21 @@ img {
 }
 
 .booking-form-show {
+  z-index: 1;
+
   display: block;
-  /*  z-index: 1;*/
   transform: translate(-50%, 0%);
-  animation: bounce 0.6s;
+  animation: form-down 0.6s;
 }
 
 .booking-form-hide {
-  display: none;
   bottom: 0;
-  z-index: -10;
   transform: translate(-50%, -5%);
+  animation: form-up 0.6s;
+}
+
+.booking-form-error {
+  animation: form-error 0.6s;
 }
 
 .booking-form {
@@ -732,6 +737,9 @@ img {
 }
 
 .map {
+  position: relative;
+  z-index: -20;
+
   background-color: var(--background-map);
 }
 
@@ -1573,12 +1581,53 @@ img {
   fill: var(--basic-extra-light-gray);
 }
 
-@keyframes bounce {
+@keyframes form-down {
   0% {
+    z-index: -10;
     transform: translate(-50%, -100%);
   }
 
+  99% {
+    z-index: -10;
+  }
+
   100% {
+    z-index: 10;
     transform: translate(-50%, 0);
+  }
+}
+
+
+@keyframes form-up {
+  0% {
+    transform: translate(-50%, 100%);
+  }
+
+  100% {
+    transform: translate(-50%, -5%);
+  }
+}
+
+
+@keyframes form-error {
+
+  0%,
+  100% {
+    transform: translateX(-55%);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translateX(-45%);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translateX(-55%);
   }
 }
